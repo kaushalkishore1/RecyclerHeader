@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RecyclerViewHeader</string>
+    <string name="header">header</string>
+    <string name="item">item</string>
+    <string name="action_settings">Setting</string>
+
+
+</resources>

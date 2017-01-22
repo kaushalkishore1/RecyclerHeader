@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'https://github.com/kaushalkishore1'
 
 android {
     compileSdkVersion 25
@@ -17,7 +19,34 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'k2Awesome'
+
+    publishedGroupId = 'com.k2infosoft.k2recyclerheader'
+    libraryName = 'Blaze'
+    artifact = 'blaze'
+
+    libraryDescription = 'Recycler header'
+
+    siteUrl = 'https://github.com/kaushalkishore1/RecyclerHeader'
+    gitUrl = 'https://github.com/kaushalkishore1/RecyclerHeader.git'
+
+    libraryVersion = '2.1.0'
+
+    developerId = 'kaushalkishore1'
+    developerName = 'kaushal kishore'
+    developerEmail = 'kaushalkishore80927@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
